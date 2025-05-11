@@ -1,4 +1,4 @@
-package Questoes;
+package questoes;
 
 public class Questao2 {
     public static void verificarNumero(int numero) {

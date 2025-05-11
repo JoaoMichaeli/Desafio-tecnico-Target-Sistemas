@@ -1,4 +1,4 @@
-package Questoes;
+package questoes;
 
 public class Questao1 {
     public static void executar() {

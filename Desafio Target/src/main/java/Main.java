@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import Questoes.*;
+import questoes.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -7,10 +7,8 @@ public class Main {
         boolean continuar = true;
 
         while (continuar) {
-            // Exibe as opções de questões para o usuário
             exibirMenu();
 
-            // Solicita a escolha do usuário
             System.out.print("Digite o número da questão que deseja executar (1-5) ou 0 para sair: ");
             int opcao = obterEntradaInteira(scanner);
 
@@ -24,7 +22,6 @@ public class Main {
                     Questao2.verificarNumero(numero);
                     break;
                 case 3:
-                    // Chamando o método para analisar o faturamento sem precisar de entrada de caminho
                     Questao3.analisarFaturamento();
                     break;
                 case 4:
@@ -44,10 +41,9 @@ public class Main {
             }
         }
 
-        scanner.close();  // Fechar o scanner ao final
+        scanner.close();
     }
 
-    // Método para exibir o menu com as opções de questões
     private static void exibirMenu() {
         System.out.println("\n=== MENU ===");
         System.out.println("1 - Questão 1: Calcular a soma de 1 até 13");
@@ -59,11 +55,10 @@ public class Main {
         System.out.println("==============");
     }
 
-    // Método para garantir que a entrada do usuário seja um número inteiro válido
     private static int obterEntradaInteira(Scanner scanner) {
         while (!scanner.hasNextInt()) {
             System.out.print("Entrada inválida. Digite um número inteiro: ");
-            scanner.next();  // Consumir a entrada inválida
+            scanner.next();
         }
         return scanner.nextInt();
     }

@@ -1,4 +1,4 @@
-package Questoes;
+package questoes;
 
 public class Questao5 {
     public static void inverterTexto(String texto) {

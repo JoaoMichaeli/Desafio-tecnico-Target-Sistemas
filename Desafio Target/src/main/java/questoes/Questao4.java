@@ -1,4 +1,4 @@
-package Questoes;
+package questoes;
 
 import java.util.*;
 

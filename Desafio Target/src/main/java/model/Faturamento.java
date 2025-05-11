@@ -1,13 +1,8 @@
-package Model;
+package model;
 
 public class Faturamento {
     private String estado;
     private double faturamento;
-
-    public Faturamento(String estado, double faturamento) {
-        this.estado = estado;
-        this.faturamento = faturamento;
-    }
 
     public String getEstado() {
         return estado;
