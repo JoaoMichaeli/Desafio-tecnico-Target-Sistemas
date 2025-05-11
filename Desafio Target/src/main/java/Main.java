@@ -11,6 +11,7 @@ public class Main {
 
             System.out.print("Digite o número da questão que deseja executar (1-5) ou 0 para sair: ");
             int opcao = obterEntradaInteira(scanner);
+            scanner.nextLine();
 
             switch (opcao) {
                 case 1:
