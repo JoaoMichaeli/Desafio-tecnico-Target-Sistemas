@@ -31,7 +31,7 @@ public class Main {
                 case 5:
                     System.out.print("Digite a string para inverter: ");
                     String texto = scanner.nextLine();
-                    Questao5.inverterTexto(texto);
+                    Questao5.inverterTextoUsuario(texto);
                     break;
                 case 0:
                     continuar = false;
